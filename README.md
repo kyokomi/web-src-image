@@ -6,11 +6,13 @@ web-src-image
 ## Usage
 
 ```bash
-$ web-src-image {outputDirPath} {webURL}
+$ web-src-image -n fileName -o output-dir --url http://hogehoge/fugafuga -p 3
 ```
 
-- Args1: images outputDirPath
-- Args2: scraping web URL
+- `-n`: baseImageName
+- `-o`: output dir path
+- `--url`: scraping target url
+- `-p`: total page count
 
 ## Install
 
@@ -19,6 +21,7 @@ To install, use `go get`:
 ```bash
 $ go get -d github.com/kyokomi/web-src-image
 ```
+To install, [relasePage](https://github.com/kyokomi/web-src-image/releases) download
 
 ## Memo
 
